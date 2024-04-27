@@ -83,7 +83,7 @@ export default {
         }
       ).then(res => {
         console.log(res)
-        this.img7='data:image/png;base64,'+res.data;
+        this.img7=res.data;
         this.picname=this.value+"_"+this.RData +"_"+this.dataname+"_.png";
         this.loading7=false;
         this.show7=false
