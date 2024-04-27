@@ -96,7 +96,7 @@ export default {
         }
       ).then(res => {
         for (let i = 0; i < res.data.length; i++) {
-          this.imgs[i] = 'data:image/png;base64,' + res.data[i];
+          this.imgs[i] = res.data[i];
         }
         console.log(res)
         this.loading=false;
